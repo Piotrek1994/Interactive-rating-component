@@ -1,3 +1,5 @@
+@import 'task.css';
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,7 +8,7 @@
 
 body {
 	height: 100vh;
-	background-color: hsl(216, 12%, 8%);
+	background-color: black;
 	font-family: 'Overpass', sans-serif;
 }
 
@@ -19,19 +21,8 @@ body {
     padding: 27px;
 	border-radius: 30px;
 	transform: translate(-50%, -50%);
-	background-image: linear-gradient(
-		180deg,
-		hsl(212deg 13% 23%) 0%,
-		hsl(214deg 13% 22%) 11%,
-		hsl(212deg 12% 21%) 22%,
-		hsl(215deg 12% 19%) 33%,
-		hsl(216deg 11% 18%) 44%,
-		hsl(213deg 11% 17%) 56%,
-		hsl(220deg 11% 15%) 67%,
-		hsl(217deg 11% 14%) 78%,
-		hsl(223deg 11% 13%) 89%,
-		hsl(220deg 10% 11%) 100%
-	);
+    background-color: hsl(216, 12%, 8%);
+
 }
 
 .star-icon {
@@ -39,10 +30,10 @@ body {
 	width: 40px;
 	height: 40px; 
     border-radius: 50%;
-    background-color: hsl(0, 0%, 38%);
+    background-color: hsl(213, 19%, 18%);
 }
 
-img {
+.card img {
     position: absolute;
     width: 17px;
     top: 50%;
@@ -78,13 +69,21 @@ img {
 }
 
 .number-button {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: hsl(213, 19%, 18%);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.number-button:hover {
+    background-color: hsl(25, 97%, 53%);
 }
 
 .submit-button {
@@ -93,10 +92,18 @@ img {
     margin-top: 20px;
     border-radius: 30px;
     border: none;
-    background-color: white;
-    color:hsl(25, 97%, 53%);
+    background-color: hsl(25, 97%, 53%);
+    color:white;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color .4s, color .4s;
 }
+
+.submit-button:hover {
+    background-color: white;
+    color:hsl(25, 97%, 53%);
+}
+

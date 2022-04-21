@@ -1,0 +1,60 @@
+.thank-you-card {
+    display: none;
+}
+
+.card-2 {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	width: 380px;
+	height: 380px;
+	top: 50%;
+	left: 50%;
+	padding: 25px;
+	border-radius: 30px;
+	transform: translate(-50%, -50%);
+	background-color: hsl(216, 12%, 8%);
+}
+
+.terminal-photo {
+	width: 50px;
+	height: 45%;
+	background-position: center;
+	background-size: cover;
+}
+
+.card-2 img {
+	position: absolute;
+	width: 160px;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.select-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 55%;
+	height: 30px;
+	background-color: hsl(213, 19%, 18%);
+	border-radius: 15px;
+	font-size: 14px;
+    color: hsl(25, 97%, 53%);
+}
+
+.card2-headline {
+	margin-top: 30px;
+	color: white;
+	font-size: 28px;
+}
+
+.card2-text {
+	margin-top: 10px;
+	text-align: center;
+	color: white;
+	font-weight: 200;
+	font-size: 15px;
+}
