@@ -21,6 +21,7 @@ const markBtn1 = () => {
 	btn4.style.background = ''
 	btn3.style.background = ''
 	btn1.style.background = '#7c8798'
+	number1()
 }
 
 const markBtn2 = () => {
@@ -29,6 +30,7 @@ const markBtn2 = () => {
 	btn4.style.background = ''
 	btn3.style.background = ''
 	btn2.style.background = '#7c8798'
+	number2()
 }
 
 const markBtn3 = () => {
@@ -37,6 +39,7 @@ const markBtn3 = () => {
 	btn5.style.background = ''
 	btn4.style.background = ''
 	btn3.style.background = '#7c8798'
+	number3()
 }
 
 
@@ -46,6 +49,7 @@ const markBtn4 = () => {
 	btn3.style.background = ''
 	btn5.style.background = ''
 	btn4.style.background = '#7c8798'
+	number4()
 }
 
 const markBtn5 = () => {
@@ -54,10 +58,27 @@ const markBtn5 = () => {
 	btn3.style.background = ''
 	btn4.style.background = ''
 	btn5.style.background = '#7c8798'
-	number()
+	number5()
 }
 
-const number = () => {
+
+
+
+
+
+const number1 = () => {
+	check.textContent = btn1.value
+}
+const number2 = () => {
+	check.textContent = btn2.value
+}
+const number3 = () => {
+	check.textContent = btn3.value
+}
+const number4 = () => {
+	check.textContent = btn4.value
+}
+const number5 = () => {
 	check.textContent = btn5.value
 }
 
